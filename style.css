@@ -1,0 +1,169 @@
+@charset"utf-8";
+body { min-width:1200px; }
+a:hover { color:#C7241D; }
+#header { height:120px; background: #C7241D; }
+.header_tel { background:url(header_tel.png)/*tpa=http://www.microitsm.com/template/1/images/header_tel.png*/ left no-repeat; padding-left:60px; font-size:30px; color:#C7241D; font-family:impact; line-height:120px; }
+
+#navigation { z-index:2; position:relative; height:80px; background: #C7241D; }
+#navigation>ul { height:120px; }
+#navigation>ul>li { position:relative; float: right; width: 128px; }
+#navigation>ul>li>a { display:block; height:120px; padding-top:36px; text-align:center; color:#FFF; border-left:1px solid #CC3D37; }
+#navigation>ul>li:last-child>a { border-left:none; }
+#navigation>ul>li>a .name { font-size:18px; }
+#navigation>ul>li>a .aname { font-size:12px; }
+#navigation>ul>li:hover>a, #navigation>ul>li>.current { background: #414141; text-decoration:none; color:#FFF; transition:all .5s ease 0s; }
+#navigation .sub { margin:0; height:auto; display:none; position:absolute; left:0; background:#FFF; z-index:99999; width:auto; width:100%; }
+#navigation .sub li { background:none; float:none; border-bottom:1px solid #E5E5E5; }
+#navigation .sub li:last-child { border-bottom:none; }
+#navigation .sub li a { display:block; text-align:center; height:40px; line-height:36px; font-weight:normal; color:#242424; }
+#navigation .sub li a:hover { color:#137B46; }
+/* 幻灯 */
+#slideshow { position:relative; overflow:hidden; }
+#slideshow .bd li { text-align: center; }
+#slideshow .bd li img { width: 100%;}
+#slideshow .hd ul { width:100%; position:absolute; z-index:1; bottom:40px; left:0; height:30px; line-height:30px; text-align:center; }
+#slideshow .hd ul li { cursor:pointer; display:inline-block; zoom:1; width:30px; height:10px; margin:2px; background:#404244; overflow:hidden; line-height:9999px; }
+#slideshow .hd ul .on { background:#DF1204; width:60px; }
+#slideshow .url { max-width:1680px; margin:0 auto; }
+#slideshow .url a { max-width:1680px; display:block; }
+#slideshow .next, #slideshow .prev { position:absolute; top:0; width:46px; cursor:pointer; height: 100%; }
+#slideshow .next { right:50%; margin-right: -600px; background:url(r.png)/*tpa=http://www.microitsm.com/template/1/images/r.png*/ center no-repeat; }
+#slideshow .prev { left:50%; margin-left: -600px; background:url(l.png)/*tpa=http://www.microitsm.com/template/1/images/l.png*/ center no-repeat; }
+#search_wrap { background:#FFF;  border-bottom: 1px solid #EEE; height: 81px; overflow: hidden; }
+.search_text { border:2px solid #C7241D; height:40px; width:200px; position:absolute; top:20px; right:80px; padding:0 10px; border-radius: 20px 0 0 20px; }
+.search_btn { background:#C7241D; height:40px; font-size:18px; font-weight:bold; width:80px; position:absolute; top:20px; right:0px; color:#FFF; cursor:pointer; border-radius:0 20px 20px 0; }
+.hot_keywords { padding:30px 0; }
+#index_products { padding:20px 0; }
+#footer { background:#C7241D; padding:20px 0; color:#FFF; }
+#footer a { color:#FFF; }
+#content { margin:20px 0; }
+.hd1 { background: #C7241D; height: 60px; line-height: 60px; padding: 0 10px 0 24px; color: #FFF; font-weight: bold; font-size: 24px; }
+.bd1 { padding:19px; margin-bottom:20px; border: 1px solid #EEE; border-bottom: 10px solid #C7241D; }
+#index_link { padding:50px 0; }
+.link_text a { display:block; background:#EEE; text-align:center; height:32px; line-height:32px; margin-bottom:10px; }
+/*当前位置*/
+#current_location { background:#EEE; background:linear-gradient(to right, #EEE, #FFF); padding:10px; margin-bottom:20px; border-radius:5px; }
+#current_location a.current { color:red; }
+#detail_name { }
+#detail_intro { font-size:12px; color:#999; margin-bottom:20px; }
+#detail_content { padding:20px 0; }
+#detail_content p { line-height:32px; }
+#detail_picture { margin:20px 0; text-align:center; }
+#detail_video { margin:20px 0; text-align:center; }
+#detail_video embed { width:100%; height:535px; }
+#detail_attachment { margin:20px 0; }
+#detail_slideshow .bd li img { width:100%; }
+#detail_slideshow .hd { margin-top:10px; }
+#detail_slideshow .hd li img { cursor:pointer; }
+#detail_slideshow .hd li.on img { transform:scale(1.2, 1.2); }
+/*首页产品标签*/
+#products_tab .hd li { display:block; cursor:pointer; height:46px; line-height:46px; padding:0 15px; background:#EEE; text-align:center; font-size:16px; }
+#products_tab .hd li.on { background:#C7241D; color:#FFF; }
+#products_tab .bd { margin-top:10px !important; }
+#products_tab .bd .content { }
+/*列表*/
+.pdlist { margin-bottom:20px; border:1px solid #EEE; padding:19px; }
+.pdlist:hover { border:1px solid #DDD; }
+.pdlist .title { font-size:18px; }
+.pdlist .content { color:#666; padding:10px 0; }
+.alist { margin-bottom:20px; }
+.alist:hover .date { border-color:#999; }
+.alist .date { text-align:center; color:#666; border:1px solid #EEE; transition:all .5s ease 0s; }
+.alist .date .month_day { font-size:16px; margin-top:15px; }
+.alist .date .year { font-size:18px; margin-bottom:15px; }
+.alist .title { font-size:18px; border-bottom:1px solid #EEE; line-height:30px; }
+.alist .content { padding:10px 0; color:#999; font-size:12px; }
+.channel_list li { margin-bottom:4px; }
+.channel_list li a { display:block; line-height:36px; background:#EEE; padding:0 10px; }
+.channel_list li a:hover { background:#C7241D; color:#FFF; }
+.channel_list li a.current { background:#C7241D; color:#FFF; }
+.channel_wlist { margin-bottom:20px; }
+.channel_wlist li { display:inline-block; margin-right:10px; }
+.channel_wlist li a { background:#EEE; height:40px; line-height:40px; display:block; text-align:center; padding:0 30px; font-size:16px; }
+.channel_wlist li a:hover { background:#C7241D; color:#FFF; }
+.channel_wlist li a.current { background:#C7241D; color:#FFF; }
+.channel_plist .hd { background:#C7241D url(icon1.png)/*tpa=http://www.microitsm.com/template/1/images/icon1.png*/ right center no-repeat; line-height:36px; padding:0 10px; margin-bottom:2px; }
+.channel_plist .hd.on { background:#C7241D url(icon2.png)/*tpa=http://www.microitsm.com/template/1/images/icon2.png*/ right center no-repeat; }
+.channel_plist .hd a { display:block; color:#EEE; }
+.channel_plist .bd { display:none; }
+.channel_plist .bd li { background:#EEE; line-height:30px; padding:0 20px; margin-bottom:2px; }
+.channel_plist .bd li a { display:block; color:#333; }
+#channel_content { }
+#channel_content p { line-height:32px; }
+.page_show { margin:20px 0; }
+.page_show a { display:inline-block; height:40px; line-height:40px; min-width:40px; text-align:center; background:#F2F2F2; margin-right:2px; border-radius:5px; }
+.page_show a:hover, .page_show a.page_current { background:#C7241D; color:#FFF; }
+.flist { margin-bottom:20px; }
+.flist .username { background:#EEE; padding:10px; }
+.flist .content { padding:20px; border:1px solid #EEE; }
+.flist .content .answer { padding:10px; border:1px solid #EEE; margin-top:10px; }
+#float { z-index:9999; position:absolute; display:block; bottom:1px; right:0; }
+#float .wrap { margin-bottom:2px; position:relative; cursor:pointer; background:#D14343; height: 60px; }
+#float .icon { width:60px; display:block; line-height:60px; text-align:center; color:#FFF; font-size:30px; }
+#float .content { min-height:60px; position:absolute; right:60px; min-width: 160px; top:0; display:none; background:#D14343; }
+#float .content a { color:#FFF; }
+#float .qq .content { line-height:60px; padding:0 20px; font-size:30px; color:#FFF; }
+#float .qrcode .content { padding:5px; width:180px; }
+#float .phone .content { line-height:60px; padding:0 20px; font-size:30px; color:#FFF; }
+#float .weibo .content { line-height:60px; padding:0 20px; font-size:30px; color:#FFF; }
+#float .custom .content { padding:20px; min-width:160px; color:#FFF; }
+#float .gotop .content { }
+.caselist .wrap { position:relative; }
+.caselist .title { display:none; background:#000; position:absolute; left:0px; top:0px; height:100%; width:100%; padding:10px; opacity:0.8; filter:alpha(opacity=80); }
+.caselist .title a { color:#DDD; }
+#channel_cover { margin-bottom:10px; text-align:center; }
+.honor_list { height:387px; overflow:hidden; position:relative; }
+.honor_list .bd .content { height:387px; text-align:center; }
+.honor_list .bd .content img { height:387px; }
+.honor_list .prev, .honor_list .next { display:none; width:40px; height:40px; line-height:40px; text-align:center; background:#EEE; color:#000; cursor:pointer; font-size:14px; opacity:0.5; filter:alpha(opacity=50); }
+.honor_list .prev { position:absolute; top:160px; left:10px; }
+.honor_list .next { position:absolute; top:160px; right:10px; }
+#index_4 { padding:50px 0; background:#C7241D; }
+#index_4 .name { text-align:center; font-size:30px; text-align:center; padding:30px 0; color:#FFF; }
+#index_4 .seoname { border-top:1px solid #3368BA; text-align:center; }
+#index_4 .seoname span { position:relative; top:-16px; background:#3368BA; padding:10px 20px; font-size:16px; line-height:30px; color:#FFF; }
+.case_list .title { background:#FFF; padding:20px; }
+.index_hd { }
+.index_hd .name_wrap { background:#C7241D; padding:10px; text-align:left; font-size:26px; color:#FFF; margin-bottom:10px; position:relative; }
+.index_hd .name_wrap .aname { font-size:16px; }
+.index_hd .name_wrap .more { display:block; background:#242424; width:80px; height:36px; font-size:14px; text-align:center; line-height:36px; position:absolute; right:20px; top:20px; }
+.index_hd .name_wrap .more a { color:#FFF; }
+.index_bd { background:#FAFAFA; padding:19px; border:1px solid #EEE; min-height:300px; }
+.products_clist { }
+.products_clist ul { padding:20px; background:#EEE; min-height:570px; border:1px solid #DDD; }
+.products_clist ul li { line-height:40px; text-align:center; }
+.products_clist ul li a { display:block; font-size:16px; color:#242424; background:#FAFAFA; margin-bottom:10px; }
+.products_clist ul li a:hover { background:#C7241D; color:#FFF; }
+#index_products { padding:50px 0; }
+.cname { text-align:center; font-size:30px; color:#C7241D; margin-top:-30px; background:url(cname.png)/*tpa=http://www.microitsm.com/template/1/images/cname.png*/ center no-repeat; }
+.caname { text-align:center; font-size:40px; color:#EEE; text-transform:uppercase; }
+.cseoname { text-align:center; font-size:18px; color:#999999; margin-top:20px; }
+.cmore { text-align:center; }
+.products-clist { padding:40px 0; text-align:center; }
+.products-clist a { font-size:20px; border-right:1px solid #C7241D; padding:0 20px; }
+.products-clist a:last-child { border-right:none; }
+.plist .wrap { transition:all .5s ease 0s; overflow: hidden; border-radius: 10px; }
+.plist .wrap:hover { box-shadow: 0 0 10px #C7241D;  }
+.plist .wrap .title { text-align:center; display:block; line-height:60px; color:#FFF; font-size:16px; background: #C7241D; padding:0 10px; }
+.plist .wrap .title a { color:#FFF; }
+#index_honor { background:url(index_honor.jpg)/*tpa=http://www.microitsm.com/template/1/images/index_honor.jpg*/ center no-repeat; padding:50px 0; }
+#index_honor .caname { color:#D6CDC8; }
+#honor_slideshow { position:relative; margin-top:50px; }
+#honor_slideshow .prev_next { text-align: center; margin-top: 30px;}
+#honor_slideshow .prev_next .prev, #honor_slideshow .prev_next .next { font-size: 50px; cursor:pointer; display: inline-block; }
+#honor_slideshow .prev_next .prev:hover, #honor_slideshow .prev_next .next:hover { color: #C7241D; }
+
+#index_about { padding:50px 0; }
+#index_news { background:url(index_honor.jpg)/*tpa=http://www.microitsm.com/template/1/images/index_honor.jpg*/ center no-repeat; padding:50px 0; }
+.alist { }
+.alist li { line-height:40px; border-bottom:1px solid #EEE; }
+
+#news_slide .hd img { height: 369px; width: 100% !important; }
+#news_slide .bd .title { margin-top: 10px; text-align: center; }
+#news_slide .hd { text-align: center; margin-top: 10px;}
+#news_slide .hd li { display: inline-block; height: 20px; width: 20px; border-radius: 10px; text-align: center; line-height: 20px; font-size: 12px; background: #333; color: #FFF; cursor: pointer;margin-left: 5px;}
+#news_slide .hd li.on { background: red; }
+
+#case_slide .prev_next { text-align: center; }
+#case_slide .prev_next .prev, #case_slide .prev_next .next { font-size: 30px; cursor:pointer; display: inline-block; }
+#case_slide .prev_next .prev:hover, #case_slide .prev_next .next:hover { color: #C7241D; }
